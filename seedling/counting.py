@@ -5,8 +5,7 @@ import codecs
 from collections import defaultdict, Counter
 
 import udhr, omniglot, odin, wikipedia
-import miniwals, miniethnologue
-from miniethnologue import check_lang
+import miniwals
 
 def count_iso_languages(resource):
   languages = globals()[resource].languages()
