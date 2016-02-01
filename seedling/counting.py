@@ -8,8 +8,6 @@ import udhr, omniglot, odin, wikipedia
 import miniwals, miniethnologue
 from miniethnologue import check_lang
 
-sil = miniethnologue.MiniSIL(toupdate=False)
-
 def count_iso_languages(resource):
   languages = globals()[resource].languages()
   languages_iso6393 = [i for i in languages if i in sil.ISO6393]
