@@ -9,8 +9,6 @@ import miniwals, miniethnologue
 from miniethnologue import check_lang
 
 sil = miniethnologue.MiniSIL(toupdate=False)
-pkfile = 'data/ethnologue/livinglanguages_with_info.pk'
-pseudo_ethnologue = pickle.load(codecs.open(pkfile, 'rb'))
 
 def count_iso_languages(resource):
   languages = globals()[resource].languages()
